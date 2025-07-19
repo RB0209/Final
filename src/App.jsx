@@ -1,14 +1,10 @@
+import React from "react";
+import ReactDOM from "react-dom/client";
+import Home from "./Home"; // <-- Use the new Home.jsx
+import "./index.css";
 
-import React from 'react';
-import Timeline from './Timeline';
-import './index.css';
-
-function App() {
-  return (
-    <main className="bg-gray-50 min-h-screen">
-      <Timeline />
-    </main>
-  );
-}
-
-export default App;
+ReactDOM.createRoot(document.getElementById("root")).render(
+  <React.StrictMode>
+    <Home />
+  </React.StrictMode>
+);
